@@ -1,0 +1,12 @@
+<!-- templates/base.html -->
+
+<header>
+    <a href="{% url 'home' %}">Home Page</a> | <a href="{% url 'about' %}">About</a> | <a href="{% url 'contactus' %}">Contact Us</a>
+    <!-- "Home Page" will be the text of the hyperlink-->
+    <!-- "url 'home'" is a Django tag that will provide the location of the hyperlink -->
+</header>
+
+<!-- Block Content Tags can be overwritten by child templates via inheretence -->
+<!-- It is optional to name endblock content  for readability - it can be written as "endblock" -->
+{% block content %}
+{% endblock content %}
